@@ -1,5 +1,14 @@
+body{
+   background-color: #1F2833;
+}
+
 h1 {
+    padding-top: 120px;
     text-align: center;
+}
+
+h3 {
+    margin-bottom: 20px;
 }
 
 h5 {
@@ -23,3 +32,19 @@ input {
     margin-left: 35%;
     width: 45%;
 }
+
+.labels h5 {
+    margin-left: 0;
+}
+
+hr {
+    /* border: hidden; */
+    width: 70%;
+    margin: 45px auto;
+    
+}
+
+.hrbottom {
+    border: hidden;
+}
+
