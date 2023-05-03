@@ -1,0 +1,66 @@
+/* Home page styles */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&display=swap');
+
+#indexBody {
+   background-color: #1F2833;
+   color: #C5C6C7;
+   font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+#manager {
+    padding-top: 120px;
+    text-align: center;
+    color: #66FCF1;
+    font-family: "lato-bold", lato, sans, sans-serif;
+    font-size: 4rem;
+}
+
+
+h1 {
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+    color: #66FCF1;
+    font-family: "lato-bold", lato, sans, sans-serif;
+    font-size: 5rem;
+}
+
+h4 {
+    margin: 0;
+    padding-top: 250px;
+    text-align: center;
+    color: #C5C6C7;
+    font-family: "lato-bold", lato, sans, sans-serif;
+    font-size: 1.5rem;
+}
+
+body {
+    background-color: #1F2833;
+}
+
+.form-group {
+    text-align: center;
+}
+  
+ .btn {
+    border: 2px solid #1F2833;
+    background-color: #1F2833;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 15%;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+/* Green */
+.success {
+    border-color: #45A29E;
+    color: #C5C6C7;
+}
+  
+.success:hover {
+    background-color: #45A29E;
+    color: white;
+}

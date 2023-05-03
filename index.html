@@ -13,19 +13,14 @@
   <link rel="stylesheet" href="./assets/styles/style.css">
 
   <nav class="navbar bg-primary navbar-expand-lg fixed-top" data-bs-theme="dark">
-    <!-- Navbar content -->
-    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary"> -->
     <div class="container-fluid">
-      <a class="navbar-brand" href="#manager">Task Manager</a>
+      <a class="navbar-brand" href="./home.html">HOME PAGE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <!-- <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#addNewTask">Add New Task</a>
-          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="#tasks">Tasks</a>
           </li>
@@ -36,11 +31,10 @@
         </form>
       </div>
     </div>
-    <!-- </nav> -->
   </nav>
 </head>
 
-<body>
+<body id="indexBody">
   <h1 id="manager">Task Manager</h1>
 
   <Section class="container">
@@ -86,9 +80,9 @@
       </form>
     </div>
   </Section>
-  <hr>
+  <hr id="tasks">
 
-  <section class="container" id="tasks">
+  <section class="container">
     <h3>Tasks</h3>
     <ul class="list-group">
       <li class="list-group-item">
