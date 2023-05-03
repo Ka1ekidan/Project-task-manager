@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&display=swap');
+
 body{
    background-color: #1F2833;
+   color: #C5C6C7;
+   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 h1 {
     padding-top: 120px;
     text-align: center;
+    color: #66FCF1;
+    font-family: "lato-bold", lato, sans, sans-serif;
+    font-size: 4rem;
 }
 
 h3 {
@@ -21,11 +28,6 @@ h5 {
 
 #datePicker, #dueDate {
     margin-left: 80px;
-}
-
-
-input {
-    
 }
 
 #taskBtn {
@@ -48,3 +50,11 @@ hr {
     border: hidden;
 }
 
+footer *, .card-header, .card-footer {
+    background-color: #1F2833;
+    color: #C5C6C7;
+}
+
+footer .card-title {
+    color: #C5C6C7;
+}
