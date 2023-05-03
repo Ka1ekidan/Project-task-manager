@@ -47,48 +47,99 @@
     <div class="container add">
       <h3>Add New Task</h3>
 
-      <form>
-        <div class="row g-2 grid column-gap-3">
-          <label for="task-name">
-            <h5>Task Name</h5>
-          </label>
-          <div class="col-sm-7">
-            <input type=" text" class="form-control" placeholder="add new task">
-          </div>
-          <label for="basic-url">
-            <h5>
-              Task Description</h5>
-          </label>
-          <div class="col-sm-7">
-            <!-- <div class="input-group-prepend"> -->
-            <textarea class="form-control taskInput" placeholder="task description"></textarea>
-          </div>
+      <form class="row g-3">
+        <!-- <div class="row g-2 grid column-gap-3"> -->
+        <label for="task-name">
+          <h5>Task Name</h5>
+        </label>
+        <div class="col-md-7">
+          <input type=" text" class="form-control" placeholder="add new task">
+        </div>
+        <label for="basic-url">
+          <h5>
+            Task Description</h5>
+        </label>
+        <div class="col-md-7">
+          <!-- <div class="input-group-prepend"> -->
+          <textarea class="form-control taskInput" placeholder="task description"></textarea>
+        </div>
 
-          <div class="col-sm g-col-6">
-            <label for="datePicker">
-              <h5>Due Date</h5>
-            </label>
+        <div class="col-md-4">
+          <label for="datePicker" id="dueDate">
+            <h5>Due Date</h5>
+          </label>
+          <div class="col-md-5">
             <input type="date" id="datePicker">
           </div>
-
-          <label for="basic-url">
-            <h5>Assign To:</h5>
-          </label>
-          <div class="col-sm-7">
-            <input type="text" class="form-control taskInput" placeholder="assigned to">
-          </div>
-          <div class="col-6">
-            <input class="btn btn-outline-primary" id="taskBtn" type="submit" value="ADD TASK">
-          </div>
         </div>
+
+        <label for="basic-url">
+          <h5>Assign To:</h5>
+        </label>
+        <div class="col-sm-7">
+          <input type="text" class="form-control taskInput" placeholder="assigned to">
+        </div>
+        <div class="col-6">
+          <input class="btn btn-outline-primary" id="taskBtn" type="submit" value="ADD TASK">
+        </div>
+        <!-- </div> -->
       </form>
     </div>
   </Section>
 
   <section>
-    <div class="container">
-
-    </div>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Task Name</h5>
+            <p class="card-subtitle mb-2">Task Discription: </p>
+            <p class="card-subtitle mb-2">Task Assigned To: </p>
+            <p class="card-subtitle mb-2">Task Due Date: </p>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Get Gas</h5>
+            <p class="card-subtitle mb-2">Go to the gas station and get gas</p>
+            <h6 class="card-subtitle mb-2">Me </h6>
+            <h6 class="card-subtitle mb-2">05/03/2023</h6>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Dishes</h5>
+            <p class="card-subtitle mb-2">Wash the dishes tongiht after dinner</p>
+            <h6 class="card-subtitle mb-2">John </h6>
+            <h6 class="card-subtitle mb-2">05/04/2023</h6>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">School work</h5>
+            <p class="card-subtitle mb-2">Work on Codecademy after coming home from Jiujitsu</p>
+            <h6 class="card-subtitle mb-2">Eric </h6>
+            <h6 class="card-subtitle mb-2">05/04/2023</h6>
+          </div>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Finish Project</h5>
+            <p class="card-subtitle mb-2">Complete final Task Manger project tasks 1-3 </p>
+            <h6 class="card-subtitle mb-2">Eric & Kal </h6>
+            <h6 class="card-subtitle mb-2">05/03/2023</h6>
+          </div>
+        </div>
+      </li>
+    </ul>
   </section>
 
 

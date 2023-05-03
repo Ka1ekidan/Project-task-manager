@@ -2,17 +2,18 @@ h1 {
     text-align: center;
 }
 
-.add h3, h5 {
-    /* margin: 10px; */
+h5 {
+    margin-left: 30px;
 }
 
 .btn {
     margin-top: 20px;
 }
 
-.datePicker {
-    margin-left: 20px;
+#datePicker, #dueDate {
+    margin-left: 80px;
 }
+
 
 input {
     
