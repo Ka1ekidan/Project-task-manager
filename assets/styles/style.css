@@ -19,10 +19,19 @@ h1 {
 }
 
 #indexBody h5 {
-    margin-left: 30px;
+
 }
 
-.btn {
+.add input, .add textarea {
+    background-color: #1F2833;
+    color: #C5C6C7;
+}
+
+.add ::placeholder {
+    color: #C5C6C7;
+}
+
+.add .btn {
     margin-top: 20px;
 }
 
@@ -33,6 +42,10 @@ h1 {
 #taskBtn {
     margin-left: 35%;
     width: 45%;
+}
+
+.tasks .list-group{
+    background-color: #1F2833;
 }
 
 .labels h5 {
