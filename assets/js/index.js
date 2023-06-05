@@ -58,10 +58,11 @@ const validFormFieldInput = event => {
       console.log(`Due Date: ${dueDate}`);
   
     taskManager.addTask(taskName, description, assignTo, dueDate);
+    
 
       // Call render method
       taskManager.render();
-
+      taskManager.save();
       // Reset the form
       taskForm.reset();
 
@@ -74,7 +75,6 @@ const validFormFieldInput = event => {
   const taskForm = document.querySelector('#taskForm');
 
   // Add event listener to the form's submit event
-  taskForm.addEventListener('submit', validFormFieldInput);
-  
+  taskForm.addEventListener('submit', validFormFieldInput);  
   
   console.log(taskManager._tasks);

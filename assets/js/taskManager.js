@@ -31,7 +31,7 @@ class TaskManager {
     this._tasks = [];
     this._currentId = currentId;
   }
-
+  
   addTask(name, description, assignedTo, dueDate, status = 'TODO') {
     const task = {
       id: this._currentId++,
@@ -89,6 +89,14 @@ class TaskManager {
 
   getTaskById(taskId) {
     return this._tasks.find((task) => task.id === taskId) || null;
+  }
+
+  save() {
+    const tasksJson = JSON.stringify(this._tasks);
+    localStorage.setItem('tasks', tasksJson);
+
+    const currentId = String(this._currentId);
+    localStorage.setItem('currentId', currentId); 
   }
 }
 
