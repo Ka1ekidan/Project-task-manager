@@ -69,20 +69,6 @@ const validFormFieldInput = event => {
       console.log('New Task:', taskManager._tasks[taskManager._tasks.length - 1]);
     }
   }
-  
-  // Select the Task List
-  const tasksList = document.getElementById('task-list');
-
-  // // Add an Event Listener to the Task List
-  // tasksList.addEventListener('click', (event) => {
-  //   // Check if the target's classList contains 'done-button'
-  //   if (event.target.classList.contains('done-button')) {
-  //     const parentTask = event.target.closest('[data-task-id]');
-  //     const taskId = parentTask.dataset.taskId;
-  //     console.log(taskId);
-  //   }
-  // });
-
 
   // Get the form element
   const taskForm = document.querySelector('#taskForm');
