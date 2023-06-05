@@ -98,9 +98,18 @@ class TaskManager {
     const currentId = String(this._currentId);
     localStorage.setItem('currentId', currentId); 
   }
-}
+  load() {
+    const tasksJson = localStorage.getItem('tasks');
+    if (tasksJson) {
+      this._tasks = JSON.parse(tasksJson);
+    }
 
-const taskManager = new TaskManager();
+    const currentId = localStorage.getItem('currentId');
+    if (currentId) {
+      this._currentId = parseInt(currentId);
+    }
+  }
+}
 
 
 export default TaskManager;

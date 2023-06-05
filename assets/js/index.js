@@ -2,6 +2,9 @@ import TaskManager from './taskManager.js';
 
 
 const taskManager = new TaskManager();
+taskManager.load(); // Load tasks from localStorage
+taskManager.save();
+taskManager.render(); // Render the tasks
 
 
 const validFormFieldInput = event => {
@@ -58,7 +61,7 @@ const validFormFieldInput = event => {
       console.log(`Due Date: ${dueDate}`);
   
     taskManager.addTask(taskName, description, assignTo, dueDate);
-    
+
 
       // Call render method
       taskManager.render();
