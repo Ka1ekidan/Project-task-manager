@@ -38,6 +38,10 @@ body {
     background-color: #1F2833;
 }
 
+a {
+  text-decoration: none;
+}
+
 .form-group {
     text-align: center;
 }
@@ -63,4 +67,23 @@ body {
 .success:hover {
     background-color: #45A29E;
     color: white;
+}
+
+#welcome {
+    color: #66FCF1;
+    animation: slideIn 1s ease-in-out infinite alternate;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

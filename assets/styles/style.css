@@ -1,73 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&display=swap');
 
 #indexBody {
-   background-color: #1F2833;
-   color: #C5C6C7;
-   font-family: Roboto, Arial, Helvetica, sans-serif;
+  background-color: #1F2833;
+  color: #C5C6C7;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  background-color: #1F2833;
+}
+
+.navbar input,
+.navbar button {
+  background-color: #1F2833;
+  color: #C5C6C7;
+  border: 2px solid #45A29E;
 }
 
 h1 {
-    padding-top: 120px;
-    text-align: center;
-    color: #66FCF1;
-    font-family: "lato-bold", lato, sans, sans-serif;
-    font-size: 4rem;
+  padding-top: 120px;
+  text-align: center;
+  color: #66FCF1;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
 }
 
 #indexBody h3 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-#indexBody h5 {
-
-}
-
-.add input, .add textarea {
-    background-color: #1F2833;
-    color: #C5C6C7;
+.add input,
+.add textarea {
+  background-color: #1F2833;
+  color: #C5C6C7;
+  border: 2px solid #45A29E;
 }
 
 .add ::placeholder {
-    color: #C5C6C7;
+  color: #C5C6C7;
 }
 
 .add .btn {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
-#datePicker, #dueDate {
-    margin-left: 80px;
+#datePickerInput,
+#dueDate {
+  margin-left: 100px;
 }
+
+#dueDateErrorAlert{
+  margin-left: 90px;
+  width: 100%;
+}
+
+/* Invert date picker icon color for dark background */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); 
+  }
 
 #taskBtn {
-    margin-left: 35%;
-    width: 45%;
-}
-
-.tasks .list-group{
-    background-color: #1F2833;
+  margin-left: 35%;
+  width: 45%;
 }
 
 .labels h5 {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 hr {
-    /* border: hidden; */
-    width: 70%;
-    margin: 80px auto;
-    
+  width: 70%;
+  margin: 80px auto;
 }
 
 .hrbottom {
-    border: hidden;
+  border: hidden;
 }
 
-footer *, .card-header, .card-footer {
-    background-color: #1F2833;
-    color: #C5C6C7;
+footer *,
+.card-header,
+.card-footer {
+  background-color: #1F2833;
+  color: #C5C6C7;
 }
 
 footer .card-title {
-    color: #C5C6C7;
+  color: #C5C6C7;
 }
+
+footer .btn {
+  border: 2px solid #45A29E;
+  color: #C5C6C7;
+}
+
+
+.error-alert {
+    color: red;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .error-alert .alert-text {
+    margin: 0;
+    padding: 0;
+  }

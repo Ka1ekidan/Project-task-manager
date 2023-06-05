@@ -57,7 +57,10 @@ const validFormFieldInput = event => {
       console.log(`Assign To: ${assignTo}`);
       console.log(`Due Date: ${dueDate}`);
   
-    taskManager.addTask(taskName, description, assignTo, dueDate, 'pending');
+    taskManager.addTask(taskName, description, assignTo, dueDate);
+
+      // Call render method
+      taskManager.render();
 
       // Reset the form
       taskForm.reset();
@@ -67,12 +70,25 @@ const validFormFieldInput = event => {
     }
   }
   
+  // Select the Task List
+  const tasksList = document.getElementById('task-list');
+
+  // // Add an Event Listener to the Task List
+  // tasksList.addEventListener('click', (event) => {
+  //   // Check if the target's classList contains 'done-button'
+  //   if (event.target.classList.contains('done-button')) {
+  //     const parentTask = event.target.closest('[data-task-id]');
+  //     const taskId = parentTask.dataset.taskId;
+  //     console.log(taskId);
+  //   }
+  // });
+
+
   // Get the form element
   const taskForm = document.querySelector('#taskForm');
 
   // Add event listener to the form's submit event
   taskForm.addEventListener('submit', validFormFieldInput);
   
-
-
+  
   console.log(taskManager._tasks);
