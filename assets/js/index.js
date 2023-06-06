@@ -2,10 +2,34 @@ import TaskManager from './taskManager.js';
 
 
 const taskManager = new TaskManager();
-taskManager.load(); // Load tasks from localStorage
-taskManager.save();
-taskManager.render(); // Render the tasks
+// localStorage.clear();
 
+// Get the tasksList element
+const tasksList = document.getElementById('task-list');
+
+// Event Listener for task-list
+tasksList.addEventListener('click', (event) => {
+  const target = event.target;
+  
+  // Mark As Done Button
+  if (target.classList.contains('done-button')) {
+    const taskId = parseInt(target.dataset.taskId);
+    taskManager.updateTaskStatus(taskId, 'Done');
+    target.classList.add('d-none');
+  } 
+  
+  if (target.classList.contains('delete-button')) {   // Delete Button
+    const parentTask = target.closest('.list-group-item');
+    const taskId = parseInt(parentTask.dataset.taskId);
+    taskManager.deleteTask(taskId);
+    taskManager.save();
+    taskManager.render();
+  }
+});
+
+
+  taskManager.load(); // Load tasks from localStorage
+  taskManager.render(); // Render the tasks
 
 const validFormFieldInput = event => {
     event.preventDefault(); // Prevent form submission
@@ -73,6 +97,8 @@ const validFormFieldInput = event => {
       console.log('New Task:', taskManager._tasks[taskManager._tasks.length - 1]);
     }
   }
+
+  
 
   // Get the form element
   const taskForm = document.querySelector('#taskForm');
