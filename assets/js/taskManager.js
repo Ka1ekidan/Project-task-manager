@@ -27,8 +27,8 @@ const createTasksHtml = (id, name, description, assignedTo, dueDate, status) => 
             <div class="d-flex justify-content-between align-items-start mb-2">
               <div>
                 <p class="card-subtitle mb-3">${description}</p>
-                <p class="card-subtitle mb-3"><strong>Assign To:</strong> ${assignedTo}</p>
-                <p class="card-subtitle mb-3"><strong>Due Date:</strong> ${dueDate}</p>
+                <p class="card-subtitle mb-3"><span>Assign To:</span> ${assignedTo}</p>
+                <p class="card-subtitle mb-3"><span>Due Date:</span> ${dueDate}</p>
               </div>
               
             </div>

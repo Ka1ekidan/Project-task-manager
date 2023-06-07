@@ -173,8 +173,3 @@ ul .inProgress-button:hover {
   height: 20px;
   border-radius: 50%;
 }
-
-/* Task List Styles */
-#task-list {
-  background-color: #45A29E;
-}
