@@ -83,6 +83,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #FFF;
 }
 
+#search-btn {
+  border: 2px solid #45A29E;
+  height: 35px;
+  width: 90px;
+  border-radius: 10px;
+  color: #C5C6C7;
+}
+
+#search-btn:hover {
+  border: 2px solid #45A29E;
+  background-color: #45A29E;
+  color: #FFF;
+}
+
 .labels h5 {
   margin-left: 0;
 }
