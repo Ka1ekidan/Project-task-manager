@@ -103,6 +103,10 @@ hr {
   color: #ffffff;
 }
 
+#task-list .card-title {
+  color: #ffd60a;
+}
+
 /* Footer Styles */
 footer *,
 .card-header,
