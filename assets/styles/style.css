@@ -74,7 +74,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 #taskBtn {
   margin-left: 35%;
-  width: 45%;
+  padding: 10px 100px;
+  border-radius: 15px;
 }
 
 #taskBtn:hover {
@@ -87,7 +88,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border: 2px solid #45A29E;
   height: 35px;
   width: 90px;
-  border-radius: 10px;
+  border-radius: 7px;
   color: #C5C6C7;
 }
 
